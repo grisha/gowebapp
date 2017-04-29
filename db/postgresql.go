@@ -77,8 +77,8 @@ func (p *pgDb) prepareSqlStatements() (err error) {
 	return nil
 }
 
-func (p *pgDb) People() ([]*model.Person, error) {
-	var people []*model.Person
+func (p *pgDb) SelectPeople() ([]*model.Person, error) {
+	people := make([]*model.Person, 0)
 	if err := p.sqlSelectPeople.Select(&people); err != nil {
 		return nil, err
 	}
