@@ -1,6 +1,8 @@
 # gowebapp
 Simplistic Go Web App
 
+Read about it [here](https://grisha.org/blog/2017/04/27/simplistic-go-web-app/).
+
 To install:
 
 1. You need PostgreSQL, install it somehow, make an empty database
